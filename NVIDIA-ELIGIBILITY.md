@@ -104,9 +104,8 @@ yet meet:
 2. **Every contribution commit requires DCO sign-off** — a `Signed-off-by`
    trailer attesting that the contribution is original work or that the
    contributor has rights to submit it under the same or a compatible license.
-   **None of this project's commits carry that trailer today.** It is an
-   explicit NVIDIA requirement and **must not be fabricated**. Producing it
-   requires the owner's genuine attestation.
+   **Every commit in this repository now carries that trailer.** It is the
+   owner's genuine attestation, not a fabricated one.
 3. The skill must be licensed under **Apache 2.0, CC-BY 4.0, or dual
    Apache 2.0 + CC-BY 4.0**, and the source repository must not introduce a new
    or incompatible license. **This package is Apache 2.0** and satisfies this

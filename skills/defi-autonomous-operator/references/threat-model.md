@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Copyright (c) 2026 Parmasanandgarlic. All rights reserved. -->
 # Threat Model
 
 Human-readable threat model for an agent operating a bounded DeFi control

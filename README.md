@@ -89,12 +89,12 @@ node validation/tools/extract-canonical-truth.mjs --json
 
 ## License
 
-MIT, with one exception recorded in
-[`skills/defi-autonomous-operator/references/NOTICE.md`](skills/defi-autonomous-operator/references/NOTICE.md).
+**Apache License, Version 2.0** (SPDX: `Apache-2.0`). See [`LICENSE`](LICENSE).
 
-**MIT is not on NVIDIA's accepted-license list** for skills published to
-`github.com/nvidia/skills` (Apache 2.0, CC-BY 4.0, or dual). Relicensing is an
-explicit ownership decision and has not been taken.
+Apache 2.0 is one of the three licenses NVIDIA's contribution policy accepts for
+skills published to `github.com/nvidia/skills`, so no license change is required
+for a catalog submission. See
+[`NOTICE.md`](skills/defi-autonomous-operator/references/NOTICE.md).
 
 ## Provenance
 

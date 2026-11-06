@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Copyright (c) 2026 Parmasanandgarlic. All rights reserved. -->
 # Response Contract
 
 For operational requests, report the workflow using these fields when applicable:

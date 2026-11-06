@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Copyright (c) 2026 Parmasanandgarlic. All rights reserved. -->
 # Authority Model
 
 How authority is obtained, bound, checked, and lost.

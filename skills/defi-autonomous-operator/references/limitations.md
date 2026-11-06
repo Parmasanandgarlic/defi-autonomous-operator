@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Copyright (c) 2026 Parmasanandgarlic. All rights reserved. -->
 # Limitations
 
 - This skill governs *how an agent operates* a DeFi control plane. It does not

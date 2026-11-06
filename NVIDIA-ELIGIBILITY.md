@@ -109,9 +109,8 @@ yet meet:
    requires the owner's genuine attestation.
 3. The skill must be licensed under **Apache 2.0, CC-BY 4.0, or dual
    Apache 2.0 + CC-BY 4.0**, and the source repository must not introduce a new
-   or incompatible license. This package is **MIT-licensed**, which is not on
-   that list. Relicensing is an explicit ownership decision and has not been
-   taken. See `skills/defi-autonomous-operator/references/NOTICE.md`.
+   or incompatible license. **This package is Apache 2.0** and satisfies this
+   requirement. See `skills/defi-autonomous-operator/references/NOTICE.md`.
 4. NVIDIA's trust pipeline (security scanning, evaluation, OMS signing,
    governance review) is specific to the **official NVIDIA path**. Distributing
    this skill externally and evaluating it with NVIDIA's *open* tooling is a

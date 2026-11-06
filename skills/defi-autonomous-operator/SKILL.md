@@ -1,8 +1,9 @@
 ---
+# SPDX-License-Identifier: Apache-2.0
 name: defi-autonomous-operator
 version: "1.0.0"
 description: Use when coordinating a bounded DeFi workflow that needs authority checks, simulation, local signing, submission, and reconciliation.
-license: MIT
+license: Apache-2.0
 metadata:
   author: "FarmDash Pioneers <opensource@farmdash.one>"
   tags:
@@ -66,9 +67,9 @@ manage a transaction intent lifecycle; recover from a crash, restart, or
 ambiguous transaction outcome; reconcile receipts or venue/chain outcomes; or
 determine whether an autonomous action is presently authorized.
 
-Do not activate this skill merely for general crypto education, market news,
-token price questions, basic protocol descriptions, or generic portfolio
-commentary with no operational request.
+Do not activate this skill merely for general crypto education, market news, token
+price questions, basic protocol descriptions, or generic portfolio commentary with
+no operational request.
 
 ---
 
@@ -83,8 +84,8 @@ A later stage must never be inferred from an earlier one.
 In particular: research is not simulation; simulation is not authority; payment
 is not authority; API access is not authority; a session is not authority; tool
 availability is not authority; a prepared transaction is not signed; a signature
-is not submission; submission is not settlement; an acknowledgement is not
-finality. If a required proof is unavailable, stop at the highest proven stage.
+is not submission; submission is not settlement; an acknowledgement is not finality.
+If a required proof is unavailable, stop at the highest proven stage.
 
 ---
 
@@ -412,12 +413,7 @@ tested with NVIDIA trust tooling.
 
 ## Reporting
 
-Report the workflow with these fields when applicable: intent, domain, mode,
-readiness, evidence and freshness, policy, authority, simulation, prepared
-artifact, signing owner, submission state, reconciliation, and the exact
-blocked reason. Never report a later lifecycle stage unless that stage is
-independently evidenced. Full field definitions:
-`references/response-contract.md`.
+Report the workflow with these fields when applicable: intent, domain, mode, readiness, evidence and freshness, policy, authority, simulation, prepared artifact, signing owner, submission state, reconciliation, and the exact blocked reason. Never report a later lifecycle stage unless that stage is independently evidenced. Full field definitions: `references/response-contract.md`.
 
 ---
 

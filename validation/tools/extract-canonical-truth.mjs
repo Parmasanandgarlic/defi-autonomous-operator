@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+// SPDX-License-Identifier: Apache-2.0
+// Copyright (c) 2026 Parmasanandgarlic. All rights reserved.
 /**
  * FarmDash canonical truth extractor (dependency-free).
  *

@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Copyright (c) 2026 Parmasanandgarlic. All rights reserved. -->
 # Lifecycle Contract
 
 The stage sequence, what each stage proves, what it must not be used to infer,

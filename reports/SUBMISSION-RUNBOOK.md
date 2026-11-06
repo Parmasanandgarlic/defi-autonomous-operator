@@ -177,7 +177,7 @@ Already prepared in this branch:
 | Benchmark | `skills/defi-autonomous-operator/BENCHMARK.md` | ✅ genuine generated report (verdict `INCOMPLETE` — regenerate per § 2.3) |
 | Evaluation dataset | `skills/defi-autonomous-operator/evals/evals.json` | ✅ 50 entries, schema-validated |
 | Evaluation methodology | `skills/defi-autonomous-operator/evals/EVAL.md` | ✅ complete |
-| Provenance / licensing | `skills/defi-autonomous-operator/references/NOTICE.md`, `references/LICENSE` | ✅ complete |
+| Provenance / licensing | `skills/defi-autonomous-operator/references/NOTICE.md`, `skills/defi-autonomous-operator/LICENSE`, root `LICENSE` | ✅ complete |
 | Evaluator reports | `reports/nvidia-autonomous-operator-20261105/release-packet/evidence/` | ✅ JSON + Markdown |
 | Card-generation context | `reports/nvidia-autonomous-operator-20261105/release-packet/skill-card-context.json` | ✅ complete |
 | Eligibility decision | `reports/nvidia-autonomous-operator-20261105/NVIDIA-ELIGIBILITY.md` | ✅ complete |

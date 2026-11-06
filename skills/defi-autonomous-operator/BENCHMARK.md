@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Copyright (c) 2026 Parmasanandgarlic. All rights reserved. -->
 # Skill Benchmark: defi-autonomous-operator
 
 > ⚠️ **Overall verdict: INCOMPLETE — Required evidence is missing**

@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Copyright (c) 2026 Parmasanandgarlic. All rights reserved. -->
 # NOTICE
 
 ## Provenance
@@ -39,23 +41,22 @@ original authoring convention, explained in that file.
 
 ## Licensing
 
-Instruction and documentation content in this directory is licensed under the
-MIT License; see `LICENSE`. This is the license already used by the FarmDash
-repository for its distributable packages (`mcp-server/`, `agent-kit/`,
-`client/`, `agent-kit-py/`). No third-party material was relicensed.
+This skill is licensed under the **Apache License, Version 2.0** (SPDX:
+`Apache-2.0`). The full text is at `../LICENSE` and at the repository root.
 
-**This package is non-promotional, not non-commercial.** MIT permits commercial
-and non-commercial reuse. The stated requirement was the removal of promotional
-and monetization *behavior* (no pricing, tiers, referral links, or upgrade
-CTAs) — not a restriction on how a downstream operator may use the skill.
+Apache 2.0 was selected because it is one of the three licenses NVIDIA's
+contribution policy accepts for skills published to `github.com/nvidia/skills`
+(Apache 2.0, CC-BY 4.0, or dual). It is a permissive, patent-aware license and is
+compatible with the MIT-licensed FarmDash packages this skill is validated
+against; no third-party material was relicensed and no third-party code is
+included.
 
-**NVIDIA catalog inclusion requires a different license.** NVIDIA's current
-contribution policy licenses skills published to `github.com/nvidia/skills`
-under one of: **Apache 2.0**, **CC-BY 4.0**, or **dual Apache 2.0 + CC-BY 4.0**.
-It also requires that the source repository not introduce a new or incompatible
-license. **MIT is not on that list.** Relicensing this package under an accepted
-license is an explicit ownership decision and has **not** been taken here; it
-cannot be taken unilaterally. See `NVIDIA-ELIGIBILITY.md`.
+**This package is non-promotional, not non-commercial.** Apache 2.0 permits
+commercial and non-commercial reuse. The stated requirement was the removal of
+promotional and monetization *behavior* (no pricing, tiers, referral links, or
+upgrade CTAs) — not a restriction on how a downstream operator may use the skill.
+
+Copyright (c) 2026 Parmasanandgarlic. All rights reserved.
 
 ## Trademark
 

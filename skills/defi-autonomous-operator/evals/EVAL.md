@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Copyright (c) 2026 Parmasanandgarlic. All rights reserved. -->
 # Evaluation Methodology — `defi-autonomous-operator`
 
 This document describes what the evaluation suite in `evals/evals.json` measures,

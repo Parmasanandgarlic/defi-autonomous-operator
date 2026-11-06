@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Copyright (c) 2026 Parmasanandgarlic. All rights reserved. -->
 ## Description: <br>
 Coordinates supervised and bounded-autonomous DeFi workflows so that policy, simulation, authority, local signing, submission, and settlement remain separately proven. <br>
 
@@ -7,7 +9,7 @@ This skill is ready for commercial/non-commercial use. <br>
 This skill is not owned or developed by NVIDIA. This skill has been developed and built to a third-party's requirements for this application and use case; see link to Non-NVIDIA [FarmDash Agent Hub](https://www.farmdash.one). <br>
 
 ### License/Terms of Use: <br>
-MIT <br>
+Apache License, Version 2.0 (SPDX: Apache-2.0). See the repository LICENSE file. <br>
 ## Use Case: <br>
 Intended for AI agents and their operators who need to run or supervise multi-step DeFi transaction workflows under an explicit, scoped, revocable execution grant, or who need to determine whether such an action is presently authorized. The skill governs observation, orientation, planning, simulation, authorization, preparation, local signing, submission, receipt handling, and reconciliation. It is not a strategy, signal, portfolio-analytics, or price-research skill. <br>
 

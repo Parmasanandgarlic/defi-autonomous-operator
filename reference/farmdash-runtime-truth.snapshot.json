@@ -1,0 +1,726 @@
+{
+  "_snapshot": {
+    "description": "Machine-generated snapshot of canonical FarmDash runtime truth, used by validation/tools/validate-skill-truth.mjs when the FarmDash source repository is not checked out alongside this repository.",
+    "sourceRepo": "hububstudio/farmdashbeta",
+    "sourceSha": "d0d2c6a67b98b5d2cb0fd66deb44beaf05df2431",
+    "generatedBy": "validation/tools/extract-canonical-truth.mjs --json (read-only; executes no code from the files it reads)",
+    "regenerate": "Run `node validation/tools/extract-canonical-truth.mjs --json` from a checkout of hububstudio/farmdashbeta and update this file.",
+    "note": "This snapshot is a RECORD of canonical truth, not a substitute for it. When the FarmDash source repository is present, the validator re-derives truth live from the executable contracts and ignores this file."
+  },
+  "sourceRepo": "hububstudio/farmdashbeta",
+  "capabilityTruth": {
+    "spot.USER_SIGNED": {
+      "status": "operational",
+      "prerequisite": "Healthy execution governor, quote provider, RPC and durable receipt store; customer signs and submits."
+    },
+    "spot.BOUNDED_AUTONOMOUS": {
+      "status": "operational",
+      "prerequisite": "Owner-signed EVM grant, exact simulation/calldata binding, durable budget and customer-local signer authority."
+    },
+    "futures.USER_SIGNED": {
+      "status": "operational",
+      "prerequisite": "Venue account ownership, local action signature, builder approval, risk/research gates and durable order control."
+    },
+    "futures.BOUNDED_AUTONOMOUS": {
+      "status": "operational",
+      "prerequisite": "Authenticated owner-bound futures policy, authorized local API-wallet signature, durable nonce/budget/order controls."
+    },
+    "solana.USER_SIGNED": {
+      "status": "operational",
+      "prerequisite": "Native Jupiter/RPC route, durable preparation and finality store; customer signs and broadcasts."
+    },
+    "solana.BOUNDED_AUTONOMOUS": {
+      "status": "operational",
+      "prerequisite": "Native owner-signed Solana policy; local key must be an actual required transaction signer. Policy creates no on-chain authority."
+    },
+    "ERC4337_SERVER_SUBMISSION": {
+      "status": "preparation_only",
+      "prerequisite": "Qualified tenant/account authorization and session-key policy enforcement on public forwarding, configured bundler, durable claims and verified receipt integration."
+    },
+    "GENERIC_SERVER_INTENT_EXECUTION": {
+      "status": "preparation_only",
+      "prerequisite": "Trusted executable adapter, exact signed-transaction binding and canonical receipt verifier."
+    },
+    "MEE": {
+      "status": "preparation_only",
+      "prerequisite": "Production coordinator and authoritative source/destination receipt verifier."
+    },
+    "ACP": {
+      "status": "deployment_prerequisite",
+      "prerequisite": "AcpReadinessService paidWorkflowReady, evaluator/client identities, migrations, funding/finality workers and Base RPC."
+    }
+  },
+  "capabilityTruthRowCount": 10,
+  "executionTruthMatchesCapabilityTruth": true,
+  "toolInventory": {
+    "registeredTools": [
+      "agent_onboard",
+      "analyze_futures_strategy",
+      "analyze_protocol_risk",
+      "audit_allowance_risk",
+      "audit_sybil_risk",
+      "authorize_virtuals_tender_v2",
+      "autopilot_cycle",
+      "bind_virtuals_tender_job",
+      "calculate_position_size",
+      "cancel_perp_order",
+      "cancel_virtuals_tender",
+      "compare_yields",
+      "configure_autopilot",
+      "confirm_autonomous_swap",
+      "confirm_execution",
+      "confirm_swap",
+      "create_intent",
+      "create_mee_intent",
+      "create_session",
+      "evaluate_virtuals_tender",
+      "execute_approved_intent",
+      "execute_cycle_actions",
+      "execute_perp_order",
+      "execute_swap",
+      "find_capital_route",
+      "get_agent_activity",
+      "get_agent_events",
+      "get_agent_performance",
+      "get_approval_status",
+      "get_chain_breakdown",
+      "get_cycle_status",
+      "get_event_stream_snapshot",
+      "get_execution_authority",
+      "get_farming_context",
+      "get_futures_account",
+      "get_historical_trailheat",
+      "get_idle_capital",
+      "get_mee_intent_status",
+      "get_payments_bootstrap",
+      "get_portfolio_summary",
+      "get_position_health",
+      "get_protocol_metadata",
+      "get_protocol_risk_factors",
+      "get_receipt",
+      "get_swap_quote",
+      "get_token_prices",
+      "get_trail_heat",
+      "get_virtuals_tender",
+      "get_wallet_balances",
+      "get_workflow_status",
+      "grant_session_key",
+      "hire_virtuals_specialist",
+      "ledger_realized_pnl",
+      "ledger_tax_export",
+      "list_workflows",
+      "optimize_portfolio",
+      "patch_farming_context",
+      "pause_autopilot",
+      "plan_workflow",
+      "policy_check_intent",
+      "prepare_autonomous_swap",
+      "prepare_intent",
+      "prepare_perp_order",
+      "prepare_virtuals_tender_v2",
+      "query_trail_heat",
+      "recommend_delta_hedge",
+      "record_virtuals_tender_funding_v2",
+      "register_execution_delegation",
+      "release_autonomous_reservation",
+      "request_approval_payload",
+      "request_execution_delegation",
+      "request_human_approval",
+      "reserve_virtuals_tender_funding_v2",
+      "resolve_defi_intent",
+      "resume_autopilot",
+      "revoke_execution_authority",
+      "revoke_session_key",
+      "run_risk_sentinel",
+      "run_workflow",
+      "scan_funding_rates",
+      "scan_market_conditions",
+      "select_execution_continuation",
+      "select_virtuals_provider_plan_v2",
+      "session_heartbeat",
+      "session_key_status",
+      "simulate_intent",
+      "simulate_mee_intent",
+      "simulate_points",
+      "simulate_swap_execution",
+      "simulate_transaction_risk",
+      "simulate_yield_strategy",
+      "submit_mee_intent",
+      "submit_signed_approval",
+      "verify_delegation"
+    ],
+    "registeredCount": 94,
+    "capabilityCount": 94,
+    "discoveryCount": 94,
+    "capabilityDiscoveryParity": true,
+    "registeredMissingFromCapabilities": [],
+    "capabilitiesNotRegistered": [],
+    "httpOnlyContracts": [
+      "history",
+      "quote",
+      "register",
+      "vouch"
+    ],
+    "httpOnlyContractCount": 4
+  },
+  "grantInvariants": [
+    "chains",
+    "protocols_or_router_contracts",
+    "assets",
+    "allowed_actions",
+    "per_action_value",
+    "cumulative_budget",
+    "gas",
+    "slippage",
+    "validity_expiry",
+    "revocation"
+  ],
+  "executionModeSelection": {
+    "default": "USER_SIGNED",
+    "supportedModes": [
+      "USER_SIGNED",
+      "BOUNDED_AUTONOMOUS"
+    ],
+    "unboundedAutonomySupported": false,
+    "selectionRequiredBeforeBoundedAutonomy": true,
+    "omittedExecutionModeResolvesTo": "USER_SIGNED",
+    "currentSignerModel": "EOA_V1_OWNER_LOCAL_SIGNER",
+    "requiredGrantBinding": "sessionPublicKey == ownerAddress",
+    "separateSessionSignerSupported": false,
+    "policyLimitDimensions": [
+      "chains",
+      "protocols_or_router_contracts",
+      "assets",
+      "allowed_actions",
+      "per_action_value",
+      "cumulative_budget",
+      "gas",
+      "slippage",
+      "validity_expiry",
+      "revocation"
+    ],
+    "requiresOwnerDelegation": {
+      "USER_SIGNED": false,
+      "BOUNDED_AUTONOMOUS": true
+    },
+    "authoritySeparation": {
+      "payment_grants_execution_authority": false,
+      "api_authentication_grants_wallet_authority": false,
+      "session_grants_execution_authority": false,
+      "farmdash_receives_private_keys": false
+    },
+    "neverInferAutonomousConsentFrom": [
+      "api_key",
+      "subscription_payment",
+      "x402_payment",
+      "session_creation",
+      "prior_farmdash_usage",
+      "optimization_request",
+      "position_monitoring_request",
+      "generic_do_this_for_me_instruction"
+    ]
+  },
+  "namedToolAvailability": {
+    "get_execution_authority": {
+      "exists": true,
+      "availability": "available_with_tier_gate",
+      "tier": "scout_plus",
+      "lifecycleStage": "observation",
+      "sideEffectClass": "read_only",
+      "authorityModel": [
+        "none",
+        "authenticated_session"
+      ],
+      "prerequisites": []
+    },
+    "request_execution_delegation": {
+      "exists": true,
+      "availability": "available_with_tier_gate",
+      "tier": "scout_plus",
+      "lifecycleStage": "authority",
+      "sideEffectClass": "read_only",
+      "authorityModel": [
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "create_session"
+      ]
+    },
+    "register_execution_delegation": {
+      "exists": true,
+      "availability": "available_with_tier_gate",
+      "tier": "scout_plus",
+      "lifecycleStage": "authority",
+      "sideEffectClass": "control_state",
+      "authorityModel": [
+        "USER_SIGNED",
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "request_execution_delegation"
+      ]
+    },
+    "revoke_execution_authority": {
+      "exists": true,
+      "availability": "available_with_tier_gate",
+      "tier": "scout_plus",
+      "lifecycleStage": "authority",
+      "sideEffectClass": "control_state",
+      "authorityModel": [
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "register_execution_delegation"
+      ]
+    },
+    "prepare_autonomous_swap": {
+      "exists": true,
+      "availability": "available_with_tier_gate",
+      "tier": "scout_plus",
+      "lifecycleStage": "preparation",
+      "sideEffectClass": "financial_preparation",
+      "authorityModel": [
+        "BOUNDED_AUTONOMOUS",
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "register_execution_delegation"
+      ]
+    },
+    "confirm_autonomous_swap": {
+      "exists": true,
+      "availability": "available_with_tier_gate",
+      "tier": "scout_plus",
+      "lifecycleStage": "reconciliation",
+      "sideEffectClass": "reconciliation",
+      "authorityModel": [
+        "BOUNDED_AUTONOMOUS",
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "prepare_autonomous_swap"
+      ]
+    },
+    "release_autonomous_reservation": {
+      "exists": true,
+      "availability": "available_with_tier_gate",
+      "tier": "scout_plus",
+      "lifecycleStage": "control",
+      "sideEffectClass": "control_state",
+      "authorityModel": [
+        "BOUNDED_AUTONOMOUS",
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "prepare_autonomous_swap"
+      ]
+    },
+    "verify_delegation": {
+      "exists": true,
+      "availability": "unavailable_mcp_signature_inputs",
+      "tier": "pioneer_plus",
+      "lifecycleStage": "authority",
+      "sideEffectClass": "control_state",
+      "authorityModel": [
+        "USER_SIGNED",
+        "deployment_prerequisite"
+      ],
+      "prerequisites": [
+        "owner_signature",
+        "fresh_nonce",
+        "MCP_signature_input_unavailable"
+      ]
+    },
+    "create_session": {
+      "exists": true,
+      "availability": "available_with_tier_gate",
+      "tier": "pioneer_plus",
+      "lifecycleStage": "bootstrap",
+      "sideEffectClass": "planning_state",
+      "authorityModel": [
+        "USER_SIGNED"
+      ],
+      "prerequisites": [
+        "fresh_session_signature",
+        "single_use_nonce"
+      ]
+    },
+    "session_heartbeat": {
+      "exists": true,
+      "availability": "available_with_tier_gate",
+      "tier": "pioneer_plus",
+      "lifecycleStage": "control",
+      "sideEffectClass": "control_state",
+      "authorityModel": [
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "create_session"
+      ]
+    },
+    "get_farming_context": {
+      "exists": true,
+      "availability": "available_with_tier_gate",
+      "tier": "pioneer_plus",
+      "lifecycleStage": "observation",
+      "sideEffectClass": "read_only",
+      "authorityModel": [
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "sessionId"
+      ]
+    },
+    "patch_farming_context": {
+      "exists": true,
+      "availability": "available_with_tier_gate",
+      "tier": "pioneer_plus",
+      "lifecycleStage": "planning",
+      "sideEffectClass": "planning_state",
+      "authorityModel": [
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "get_farming_context"
+      ]
+    },
+    "get_event_stream_snapshot": {
+      "exists": true,
+      "availability": "available_with_tier_gate",
+      "tier": "pioneer_plus",
+      "lifecycleStage": "observation",
+      "sideEffectClass": "read_only",
+      "authorityModel": [
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "sessionId"
+      ]
+    },
+    "get_agent_activity": {
+      "exists": true,
+      "availability": "preparation_only",
+      "tier": "session_bound",
+      "lifecycleStage": "observation",
+      "sideEffectClass": "read_only",
+      "authorityModel": [
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "sessionToken"
+      ]
+    },
+    "create_intent": {
+      "exists": true,
+      "availability": "preparation_only",
+      "tier": "session_bound",
+      "lifecycleStage": "planning",
+      "sideEffectClass": "planning_state",
+      "authorityModel": [
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "sessionToken"
+      ]
+    },
+    "policy_check_intent": {
+      "exists": true,
+      "availability": "preparation_only",
+      "tier": "session_bound",
+      "lifecycleStage": "policy",
+      "sideEffectClass": "control_state",
+      "authorityModel": [
+        "deployment_prerequisite",
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "create_intent"
+      ]
+    },
+    "simulate_intent": {
+      "exists": true,
+      "availability": "preparation_only",
+      "tier": "session_bound",
+      "lifecycleStage": "simulation",
+      "sideEffectClass": "control_state",
+      "authorityModel": [
+        "deployment_prerequisite",
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "create_intent",
+        "policy_check_intent"
+      ]
+    },
+    "request_approval_payload": {
+      "exists": true,
+      "availability": "preparation_only",
+      "tier": "session_bound",
+      "lifecycleStage": "approval",
+      "sideEffectClass": "read_only",
+      "authorityModel": [
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "simulate_intent"
+      ]
+    },
+    "submit_signed_approval": {
+      "exists": true,
+      "availability": "preparation_only",
+      "tier": "session_bound",
+      "lifecycleStage": "approval",
+      "sideEffectClass": "control_state",
+      "authorityModel": [
+        "USER_SIGNED",
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "request_approval_payload"
+      ]
+    },
+    "get_approval_status": {
+      "exists": true,
+      "availability": "preparation_only",
+      "tier": "session_bound",
+      "lifecycleStage": "observation",
+      "sideEffectClass": "read_only",
+      "authorityModel": [
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "create_intent"
+      ]
+    },
+    "prepare_intent": {
+      "exists": true,
+      "availability": "preparation_only",
+      "tier": "session_bound",
+      "lifecycleStage": "preparation",
+      "sideEffectClass": "financial_preparation",
+      "authorityModel": [
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "submit_signed_approval"
+      ]
+    },
+    "execute_approved_intent": {
+      "exists": true,
+      "availability": "preparation_only",
+      "tier": "session_bound",
+      "lifecycleStage": "submission",
+      "sideEffectClass": "financial_submission",
+      "authorityModel": [
+        "deployment_prerequisite",
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "prepare_intent"
+      ]
+    },
+    "confirm_execution": {
+      "exists": true,
+      "availability": "preparation_only",
+      "tier": "session_bound",
+      "lifecycleStage": "reconciliation",
+      "sideEffectClass": "reconciliation",
+      "authorityModel": [
+        "deployment_prerequisite",
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "execute_approved_intent"
+      ]
+    },
+    "get_receipt": {
+      "exists": true,
+      "availability": "preparation_only",
+      "tier": "session_bound",
+      "lifecycleStage": "observation",
+      "sideEffectClass": "read_only",
+      "authorityModel": [
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "execute_approved_intent"
+      ]
+    },
+    "configure_autopilot": {
+      "exists": true,
+      "availability": "available_with_tier_gate",
+      "tier": "pioneer_plus",
+      "lifecycleStage": "planning",
+      "sideEffectClass": "planning_state",
+      "authorityModel": [
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "session_heartbeat"
+      ]
+    },
+    "autopilot_cycle": {
+      "exists": true,
+      "availability": "available_with_tier_gate",
+      "tier": "pioneer_plus",
+      "lifecycleStage": "planning",
+      "sideEffectClass": "planning_state",
+      "authorityModel": [
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "configure_autopilot"
+      ]
+    },
+    "pause_autopilot": {
+      "exists": true,
+      "availability": "available_with_tier_gate",
+      "tier": "pioneer_plus",
+      "lifecycleStage": "control",
+      "sideEffectClass": "control_state",
+      "authorityModel": [
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "autopilot_cycle"
+      ]
+    },
+    "resume_autopilot": {
+      "exists": true,
+      "availability": "available_with_tier_gate",
+      "tier": "pioneer_plus",
+      "lifecycleStage": "control",
+      "sideEffectClass": "control_state",
+      "authorityModel": [
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "pause_autopilot"
+      ]
+    },
+    "grant_session_key": {
+      "exists": true,
+      "availability": "preparation_only",
+      "tier": "syndicate",
+      "lifecycleStage": "authority",
+      "sideEffectClass": "control_state",
+      "authorityModel": [
+        "USER_SIGNED",
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "create_session"
+      ]
+    },
+    "revoke_session_key": {
+      "exists": true,
+      "availability": "preparation_only",
+      "tier": "syndicate",
+      "lifecycleStage": "authority",
+      "sideEffectClass": "control_state",
+      "authorityModel": [
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "create_session"
+      ]
+    },
+    "session_key_status": {
+      "exists": true,
+      "availability": "preparation_only",
+      "tier": "syndicate",
+      "lifecycleStage": "observation",
+      "sideEffectClass": "read_only",
+      "authorityModel": [
+        "authenticated_session"
+      ],
+      "prerequisites": [
+        "create_session"
+      ]
+    },
+    "get_cycle_status": {
+      "exists": true,
+      "availability": "preparation_only",
+      "tier": "syndicate",
+      "lifecycleStage": "observation",
+      "sideEffectClass": "read_only",
+      "authorityModel": [
+        "authenticated_session"
+      ],
+      "prerequisites": []
+    },
+    "execute_cycle_actions": {
+      "exists": true,
+      "availability": "preparation_only",
+      "tier": "syndicate",
+      "lifecycleStage": "submission",
+      "sideEffectClass": "control_state",
+      "authorityModel": [
+        "deployment_prerequisite",
+        "authenticated_session"
+      ],
+      "prerequisites": []
+    },
+    "create_mee_intent": {
+      "exists": true,
+      "availability": "preparation_only",
+      "tier": "syndicate",
+      "lifecycleStage": "preparation",
+      "sideEffectClass": "financial_preparation",
+      "authorityModel": [
+        "preparation_only"
+      ],
+      "prerequisites": []
+    },
+    "simulate_mee_intent": {
+      "exists": true,
+      "availability": "preparation_only",
+      "tier": "syndicate",
+      "lifecycleStage": "simulation",
+      "sideEffectClass": "control_state",
+      "authorityModel": [
+        "preparation_only"
+      ],
+      "prerequisites": [
+        "create_mee_intent"
+      ]
+    },
+    "submit_mee_intent": {
+      "exists": true,
+      "availability": "preparation_only",
+      "tier": "syndicate",
+      "lifecycleStage": "submission",
+      "sideEffectClass": "financial_submission",
+      "authorityModel": [
+        "USER_SIGNED"
+      ],
+      "prerequisites": [
+        "simulate_mee_intent"
+      ]
+    },
+    "get_mee_intent_status": {
+      "exists": true,
+      "availability": "preparation_only",
+      "tier": "syndicate",
+      "lifecycleStage": "observation",
+      "sideEffectClass": "read_only",
+      "authorityModel": [
+        "none"
+      ],
+      "prerequisites": [
+        "create_mee_intent"
+      ]
+    },
+    "agent_onboard": {
+      "exists": true,
+      "availability": "available",
+      "tier": "scout",
+      "lifecycleStage": "bootstrap",
+      "sideEffectClass": "read_only",
+      "authorityModel": [
+        "none"
+      ],
+      "prerequisites": []
+    }
+  }
+}
